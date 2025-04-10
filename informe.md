@@ -90,7 +90,7 @@ Figura 1-5. Muestra la estructura del index.html modificado.
 </p>
 Figura 1-6. Se copia el archivo editado a su contenedor nginx1.
 
-<p aling="center">
+<br><p aling="center">
     <img src="./images/paso8.png" width="800px">
 </p>
 Figura 1-6-1.Muestra los comandos "vi" para entrar el html. y "docker exec nginx1 nginx -s reload" para recargar Nginx sin reiniciar el contenedor.Para poder visualizar los cambios realizados.
@@ -120,7 +120,7 @@ Figura 1-9. Muestra la estructura del index2.html modificado.
 </p>
 Figura 1-10. Se copia el archivo editado a su contenedor nginx2.
 
-<p aling="center">
+<br><p aling="center">
     <img src="./images/paso12.png" width="800px">
 </p>
 Figura 1-10-1.Muestra los comandos "vi" para entrar el html. y "docker exec nginx2 nginx -s reload" para recargar Nginx sin reiniciar el contenedor.Para visualizar los cambios realizados.
