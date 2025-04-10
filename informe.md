@@ -56,33 +56,35 @@ Paso 1:  Crear el primer contenedor Nginx llamado nginx1 exponiendo el puerto 80
 </p>
 Figura 1-. Creación del primer contenedor llamado nginx1.
 
-Paso 2:  Crear un segundo contenedor Nginx llamado nginx2 exponiendo el puerto 8090 para ello se ocupo los siguientes comandos "docker run --name nginx2 -d -p 8090:80 nginx".
+
+<br>Paso 2:  Crear un segundo contenedor Nginx llamado nginx2 exponiendo el puerto 8090 para ello se ocupo los siguientes comandos "docker run --name nginx2 -d -p 8090:80 nginx".
 <p aling="center">
     <img src="./images/paso2.png" width="800px">
 </p>
 Figura 1-2. Creación del segundo contenedor llamado nginx2.
 
 
-Paso 3: Se verifica que esten creados los dos contenedores correctamente.
+
+<br>Paso 3: Se verifica que esten creados los dos contenedores correctamente.
 <p aling="center">
     <img src="./images/paso4.png" width="800px">
 </p>
 Figura 1-3. Muestra la creación de los dos contenedores el nginx1 y nginx2.
 
-Paso 4: Copiar el archivo index.html desde el contenedor nginx1 al sistema anfitrión para ello se ocupo los comandos "docker cp nginx1:/usr/share/nginx/html/index.html ./index1.html"
+<br>Paso 4: Copiar el archivo index.html desde el contenedor nginx1 al sistema anfitrión para ello se ocupo los comandos "docker cp nginx1:/usr/share/nginx/html/index.html ./index1.html"
 <p aling="center">
     <img src="./images/paso3.png" width="800px">
 </p>
 Figura 1-4. Muestra el copiado del archivo index1.html.
 
-Paso 5: Editar el archivo index1.html con un editor como nano o vi, incluyendo información del instituto.
+<br>Paso 5: Editar el archivo index1.html con un editor como nano o vi, incluyendo información del instituto.
 <p aling="center">
     <img src="./images/paso5.png" width="800px">
 </p>
 Figura 1-5. Muestra la estructura del index.html modificado.
 
  
-Paso 6: Copiar el archivo editado nuevamente al contenedor nginx1: docker cp ./index1.html nginx1:/usr/share/nginx/html/index.html
+<br>Paso 6: Copiar el archivo editado nuevamente al contenedor nginx1: docker cp ./index1.html nginx1:/usr/share/nginx/html/index.html
 <p aling="center">
     <img src="./images/paso7.png" width="800px">
 </p>
@@ -93,7 +95,7 @@ Figura 1-6. Se copia el archivo editado a su contenedor nginx1.
 </p>
 Figura 1-6-1.Muestra los comandos "vi" para entrar el html. y "docker exec nginx1 nginx -s reload" para recargar Nginx sin reiniciar el contenedor.Para poder visualizar los cambios realizados.
 
-Paso 7: Visualizacion de la pagina  con los cambios realizados con información de la institución.
+<br>Paso 7: Visualizacion de la pagina  con los cambios realizados con información de la institución.
 <p aling="center">
     <img src="./images/paso9.png" width="800px">
 </p>
@@ -106,13 +108,13 @@ Paso 8: Copiar el archivo index.html desde el contenedor nginx2 al sistema anfit
 </p> 
 Figura 1-8. Muestra el copiado del archivo index2.html.
 
-Paso 9: Editar el archivo index2.html con un editor como nano o vi, incluyendo información  personal del estudiante.
+<br>Paso 9: Editar el archivo index2.html con un editor como nano o vi, incluyendo información  personal del estudiante.
 <p aling="center">
     <img src="./images/paso11.png" width="800px">
 </p>
 Figura 1-9. Muestra la estructura del index2.html modificado.
 
-Paso 10: Copiar el archivo editado nuevamente al contenedor nginx2: docker cp ./index2.html nginx2:/usr/share/nginx/html/index.html
+<br>Paso 10: Copiar el archivo editado nuevamente al contenedor nginx2: docker cp ./index2.html nginx2:/usr/share/nginx/html/index.html
 <p aling="center">
     <img src="./images/paso13.png" width="800px">
 </p>
@@ -123,7 +125,7 @@ Figura 1-10. Se copia el archivo editado a su contenedor nginx2.
 </p>
 Figura 1-10-1.Muestra los comandos "vi" para entrar el html. y "docker exec nginx2 nginx -s reload" para recargar Nginx sin reiniciar el contenedor.Para visualizar los cambios realizados.
 
-Paso 11: Visualizacion de la pagina  con los cambios realizados con datos personales.
+<br>Paso 11: Visualizacion de la pagina  con los cambios realizados con datos personales.
 <p aling="center">
     <img src="./images/paso14.png" width="800px">
 </p>
